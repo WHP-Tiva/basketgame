@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+
+    <link rel="stylesheet" href="css/game.css">
+
+    <style>
+        body {
+            background-image: url(images/background.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="startMenu">
+        <div class="startText"><p>Выберете уровень сложности</p>
+            <div class="form_radio_btn">
+                <input type="radio" name="dificult" id="dificultEasy">
+                <label for="dificultEasy">Лёгкий</label><br>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" name="dificult" id="dificultMedium">
+                <label for="dificultMedium">Средний</label><br>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" name="dificult" id="dificultHard">
+                <label for="dificultHard">Сложный</label><br>
+            </div>
+            <div class="form_radio_btn">
+                <input type="radio" name="dificult" id="dificultGenius">
+                <label for="dificultGenius">Очень сложный</label>
+            </div>
+        </div>
+        <button id="difChoose">Выбрать</button>
+    </div>
+
+    <div id="game">
+        <p id="ansP">Ответ: <span id="usl">Usl</span> Счёт: <span id="scor">0</span></p>
+        <div class="container">
+            <p id="item">2+2</p>
+
+            <img src="https://img2.akspic.ru/previews/5/7/1/6/6/166175/166175-gubka_bob-multfilm-multik-bikini_bottom-nikelodeon-500x.jpg"
+                alt="" id="hero">
+        </div>
+        <p id="lives"></p>
+    </div>
+
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>
